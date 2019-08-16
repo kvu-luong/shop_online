@@ -1,0 +1,11 @@
+{
+  "name": "online_shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch  assets/sass/style.scss assets/css/style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
