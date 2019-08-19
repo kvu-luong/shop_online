@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Online Shop</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,7 +9,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.1/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.1/slick-theme.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
   </head>
   <body>
@@ -17,64 +19,64 @@
         <header>
                 <div class="above-header">
                     <div class="left-header">
-                        <div><input class="search" type="text" name="search"><i class="fa fa-search" aria-hidden="true"></i></div>
-                        <div class="dropdown open">
-                            <a class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-                                        $
-                                    </button>
-                            <div class="dropdown-menu" aria-labelledby="triggerId">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item disabled" href="#">Disabled action</a>
-                            </div>
-                        </div>
-                        <div class="dropdown open">
-                            <a class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-                                        English
-                                    </button>
-                            <div class="dropdown-menu" aria-labelledby="triggerId">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item disabled" href="#">Disabled action</a>
-                            </div>
-                        </div>
+                        <div class="search_div"><input class="search" type="text" name="search"><i class="fa fa-search" aria-hidden="true"></i></div>
                     </div>
                     <div class="logo">
-                        <img src="http://fastortheme.com/default/image/catalog/logo_fastor.png" alt="shop online">
+                       <a href="#"><img src="http://fastortheme.com/default/image/catalog/logo_fastor.png" alt="shop online"></a>
                     </div>
                     <div class="right-header">
-                        <div><i class="fa fa-user" aria-hidden="true"></i></div>
-                        <div><i class="fa fa-cart-plus" aria-hidden="true"></i>
-                        <span>$0.00 <i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+                        <div class="user"><i class="fa fa-user" aria-hidden="true"></i></div>
+                        <div class="cart-cover">
+                            <div class="cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></div>
+                            <div class="price"><span>$0.00 <i class="arrow_down fa fa-chevron-down" aria-hidden="true"></i></span></div>
                         </div>
                     </div>
                 </div>
                 <nav class="navbar navbar-expand-sm navbar-light bg-light">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
                     <div class="collapse navbar-collapse" id="collapsibleNavId">
-                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories Vertical</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                    <a class="dropdown-item category-item" href="#">Men</a>
+                                    <a class="dropdown-item category-item" href="#">Women</a>
+                                    <a class="dropdown-item category-item" href="#">Accessories</a>
+                                    <a class="dropdown-item category-item" href="#">LookBook</a>
+                                    <a class="dropdown-item category-item" href="#">Contact</a>
+                                    <a class="dropdown-item category-item" href="#">Blog</a>
+                                </div>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Men</a>
                                 <div class="dropdown-menu" aria-labelledby="dropdownId">
                                     <a class="dropdown-item" href="#">Action 1</a>
                                     <a class="dropdown-item" href="#">Action 2</a>
                                 </div>
                             </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Women</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                    <a class="dropdown-item" href="#">Action 1</a>
+                                    <a class="dropdown-item" href="#">Action 2</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Accessories</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                    <a class="dropdown-item" href="#">Action 1</a>
+                                    <a class="dropdown-item" href="#">Action 2</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">LookBook</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
                         </ul>
-                        <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                        </form>
+                    </div>
+                    <div class="nav-right">
+                        <a href="#">Blog <i class="fa fa-heart" aria-hidden="true"></i></a>
                     </div>
                 </nav>
  
@@ -88,13 +90,13 @@
                     </ol>
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
-                            <img data-src="holder.js/900x500/auto/#777:#555/text:First slide" alt="First slide">
+                            <img src="../assets/img/slider-011.png" alt="First slide">
                         </div>
                         <div class="carousel-item">
-                            <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide">
+                            <img  src="../assets/img/slider-011.png" alt="Second slide">
                         </div>
                         <div class="carousel-item">
-                            <img data-src="holder.js/900x500/auto/#666:#444/text:Third slide" alt="Third slide">
+                            <img  src="../assets/img/slider-011.png" alt="Third slide">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
@@ -121,40 +123,40 @@
                 </div>
                 <div class="js-latest_slider">
                         <div>
-                            <img src="../assets/img/product.png" alt="online shop latest product">
+                            <img src="../assets/img/image.png" alt="online shop latest product">
                         </div>
                         <div>
-                            <img src="../assets/img/product.png" alt="online shop latest product">
+                            <img src="../assets/img/image.png" alt="online shop latest product">
                         </div>
                         <div>
-                            <img src="../assets/img/product.png" alt="online shop latest product">
+                            <img src="../assets/img/image.png" alt="online shop latest product">
                         </div>
                         <div>
-                            <img src="../assets/img/product.png" alt="online shop latest product">
+                            <img src="../assets/img/image.png" alt="online shop latest product">
                         </div>
                         <div>
-                            <img src="../assets/img/product.png" alt="online shop latest product">
+                            <img src="../assets/img/image.png" alt="online shop latest product">
                         </div>
                         <div>
-                            <img src="../assets/img/product.png" alt="online shop latest product">
+                            <img src="../assets/img/image.png" alt="online shop latest product">
                         </div>
                         <div>
-                            <img src="../assets/img/product.png" alt="online shop latest product">
+                            <img src="../assets/img/image.png" alt="online shop latest product">
                         </div>
                         <div>
-                            <img src="../assets/img/product.png" alt="online shop latest product">
+                            <img src="../assets/img/image.png" alt="online shop latest product">
                         </div>
                 </div>
             </div>
             <div class="banner">
                 <div class="banner1">
-                    <img src="../assets/img/product4.jpg" alt="online shop banner">
+                    <img src="../assets/img/image.png" alt="online shop banner">
                 </div>
                 <div class="banner1">
-                    <img src="../assets/img/product4.jpg" alt="online shop banner">
+                    <img src="../assets/img/image.png" alt="online shop banner">
                 </div>
                 <div class="banner1">
-                    <img src="../assets/img/product4.jpg" alt="online shop banner">
+                    <img src="../assets/img/image.png" alt="online shop banner">
                 </div>
             </div>
             <div class="catogory-list">
@@ -209,11 +211,11 @@
             </div>
             <div class="banner2">
                 <div class="row">
-                    <div clas="d-sm-none d-md-block col-md-6 col-lg-6 col-xl-6">
-                        <img src="../assets/img/product5.jpg" alt="online shop banner">
+                    <div class="d-sm-none d-md-block col-md-6 col-lg-6 col-xl-6">
+                        <img src="../assets/img/banner-01.png" alt="online shop banner">
                     </div>
-                    <div clas="d-sm-none d-md-block col-md-6 col-lg-6 col-xl-6">
-                        <img src="../assets/img/product5.jpg" alt="online shop banner">
+                    <div class="d-sm-none d-md-block col-md-6 col-lg-6 col-xl-6">
+                        <img src="../assets/img/banner-02.png" alt="online shop banner">
                     </div>
                 </div>
             </div>
@@ -221,25 +223,29 @@
                 <div class="row">
                     <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
                         <div class="row">
-                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <div class="best-slider col-sm-12 col-md-12 col-lg-12 col-xl-12">
                                 <div class="js-best_slider">
-                                    <div><img src="../assets/img/product6.jpg" alt="online shop best seller"></div>
-                                    <div><img src="../assets/img/product6.jpg" alt="online shop best seller"></div>
-                                    <div><img src="../assets/img/product6.jpg" alt="online shop best seller"></div>
-                                    <div><img src="../assets/img/product6.jpg" alt="online shop best seller"></div>
-                                    <div><img src="../assets/img/product6.jpg" alt="online shop best seller"></div>
-                                    <div><img src="../assets/img/product6.jpg" alt="online shop best seller"></div>
-                                    <div><img src="../assets/img/product6.jpg" alt="online shop best seller"></div>
-                                    <div><img src="../assets/img/product6.jpg" alt="online shop best seller"></div>
+                                    <div><img src="../assets/img/image.png" alt="online shop best seller"></div>
+                                    <div><img src="../assets/img/image.png" alt="online shop best seller"></div>
+                                    <div><img src="../assets/img/image.png" alt="online shop best seller"></div>
+                                    <div><img src="../assets/img/image.png" alt="online shop best seller"></div>
+                                    <div><img src="../assets/img/image.png" alt="online shop best seller"></div>
+                                    <div><img src="../assets/img/image.png" alt="online shop best seller"></div>
+                                    <div><img src="../assets/img/image.png" alt="online shop best seller"></div>
+                                    <div><img src="../assets/img/image.png" alt="online shop best seller"></div>
                                 </div>
                                 <div class="best-ads">
-                                    <img src="../assets/img/product5.jpg" alt="online shop best ads">
+                                    <img src="../assets/img/image.png" alt="online shop best ads">
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9">
+                        <div class="row">
                             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
                                 <div class="row">
                                     <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
-                                        <div><img src="../assets/img/product3.jpeg" alt="online shop best seller"></div>
+                                        <div><img src="../assets/img/image.png" alt="online shop best seller"></div>
                                         <div>
                                             <h5>Apple Cinema 30'</h5>
                                             <h6>2560x1140</h6>
@@ -247,67 +253,64 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
-                                            <div><img src="../assets/img/product3.jpeg" alt="online shop best seller"></div>
-                                            <div>
-                                                <h5>Apple Cinema 30'</h5>
-                                                <h6>2560x1140</h6>
-                                                <h6><span>$100.00</span><span>$90.00</span></h6>
-                                            </div>
+                                        <div><img src="../assets/img/image.png" alt="online shop best seller"></div>
+                                        <div>
+                                            <h5>Apple Cinema 30'</h5>
+                                            <h6>2560x1140</h6>
+                                            <h6><span>$100.00</span><span>$90.00</span></h6>
                                         </div>
-                                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
-                                            <div><img src="../assets/img/product3.jpeg" alt="online shop best seller"></div>
-                                            <div>
-                                                <h5>Apple Cinema 30'</h5>
-                                                <h6>2560x1140</h6>
-                                                <h6><span>$100.00</span><span>$90.00</span></h6>
-                                            </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                                        <div><img src="../assets/img/image.png" alt="online shop best seller"></div>
+                                        <div>
+                                            <h5>Apple Cinema 30'</h5>
+                                            <h6>2560x1140</h6>
+                                            <h6><span>$100.00</span><span>$90.00</span></h6>
                                         </div>
-                                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
-                                            <div><img src="../assets/img/product3.jpeg" alt="online shop best seller"></div>
-                                            <div>
-                                                <h5>Apple Cinema 30'</h5>
-                                                <h6>2560x1140</h6>
-                                                <h6><span>$100.00</span><span>$90.00</span></h6>
-                                            </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                                        <div><img src="../assets/img/image.png" alt="online shop best seller"></div>
+                                        <div>
+                                            <h5>Apple Cinema 30'</h5>
+                                            <h6>2560x1140</h6>
+                                            <h6><span>$100.00</span><span>$90.00</span></h6>
                                         </div>
-                                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
-                                            <div><img src="../assets/img/product3.jpeg" alt="online shop best seller"></div>
-                                            <div>
-                                                <h5>Apple Cinema 30'</h5>
-                                                <h6>2560x1140</h6>
-                                                <h6><span>$100.00</span><span>$90.00</span></h6>
-                                            </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                                        <div><img src="../assets/img/image.png" alt="online shop best seller"></div>
+                                        <div>
+                                            <h5>Apple Cinema 30'</h5>
+                                            <h6>2560x1140</h6>
+                                            <h6><span>$100.00</span><span>$90.00</span></h6>
                                         </div>
-                                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
-                                            <div><img src="../assets/img/product3.jpeg" alt="online shop best seller"></div>
-                                            <div>
-                                                <h5>Apple Cinema 30'</h5>
-                                                <h6>2560x1140</h6>
-                                                <h6><span>$100.00</span><span>$90.00</span></h6>
-                                            </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                                        <div><img src="../assets/img/image.png" alt="online shop best seller"></div>
+                                        <div>
+                                            <h5>Apple Cinema 30'</h5>
+                                            <h6>2560x1140</h6>
+                                            <h6><span>$100.00</span><span>$90.00</span></h6>
                                         </div>
-                                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
-                                            <div><img src="../assets/img/product3.jpeg" alt="online shop best seller"></div>
-                                            <div>
-                                                <h5>Apple Cinema 30'</h5>
-                                                <h6>2560x1140</h6>
-                                                <h6><span>$100.00</span><span>$90.00</span></h6>
-                                            </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                                        <div><img src="../assets/img/image.png" alt="online shop best seller"></div>
+                                        <div>
+                                            <h5>Apple Cinema 30'</h5>
+                                            <h6>2560x1140</h6>
+                                            <h6><span>$100.00</span><span>$90.00</span></h6>
                                         </div>
-                                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
-                                            <div><img src="../assets/img/product3.jpeg" alt="online shop best seller"></div>
-                                            <div>
-                                                <h5>Apple Cinema 30'</h5>
-                                                <h6>2560x1140</h6>
-                                                <h6><span>$100.00</span><span>$90.00</span></h6>
-                                            </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                                        <div><img src="../assets/img/image.png" alt="online shop best seller"></div>
+                                        <div>
+                                            <h5>Apple Cinema 30'</h5>
+                                            <h6>2560x1140</h6>
+                                            <h6><span>$100.00</span><span>$90.00</span></h6>
                                         </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9">
-                        
                     </div>
                 </div>
             </div>
@@ -317,7 +320,7 @@
             <div class="features">
                 <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-2 col-xl-2">
-                        <div><img src="../assets/img/product3.jpeg" alt="online shop best seller"></div>
+                        <div><img src="../assets/img/image.png" alt="online shop best seller"></div>
                         <div>
                             <h5>Apple Cinema 30'</h5>
                             <h6>2560x1140</h6>
@@ -325,7 +328,7 @@
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-2 col-xl-2">
-                        <div><img src="../assets/img/product3.jpeg" alt="online shop best seller"></div>
+                        <div><img src="../assets/img/image.png" alt="online shop best seller"></div>
                         <div>
                             <h5>Apple Cinema 30'</h5>
                             <h6>2560x1140</h6>
@@ -333,7 +336,7 @@
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-2 col-xl-2">
-                        <div><img src="../assets/img/product3.jpeg" alt="online shop best seller"></div>
+                        <div><img src="../assets/img/image.png" alt="online shop best seller"></div>
                         <div>
                             <h5>Apple Cinema 30'</h5>
                             <h6>2560x1140</h6>
@@ -341,7 +344,7 @@
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-2 col-xl-2">
-                        <div><img src="../assets/img/product3.jpeg" alt="online shop best seller"></div>
+                        <div><img src="../assets/img/image.png" alt="online shop best seller"></div>
                         <div>
                             <h5>Apple Cinema 30'</h5>
                             <h6>2560x1140</h6>
@@ -349,7 +352,7 @@
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-2 col-xl-2">
-                        <div><img src="../assets/img/product3.jpeg" alt="online shop best seller"></div>
+                        <div><img src="../assets/img/image.png" alt="online shop best seller"></div>
                         <div>
                             <h5>Apple Cinema 30'</h5>
                             <h6>2560x1140</h6>
@@ -357,7 +360,7 @@
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-2 col-xl-2">
-                        <div><img src="../assets/img/product3.jpeg" alt="online shop best seller"></div>
+                        <div><img src="../assets/img/image.png" alt="online shop best seller"></div>
                         <div>
                             <h5>Apple Cinema 30'</h5>
                             <h6>2560x1140</h6>
@@ -370,22 +373,22 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
                         <div>
-                            <img src="../assets/img/product4.jpg" alt="online shop from blog">
+                            <img src="../assets/img/image.png" alt="online shop from blog">
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
                         <div>
-                            <img src="../assets/img/product4.jpg" alt="online shop from blog">
+                            <img src="../assets/img/image.png" alt="online shop from blog">
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
                         <div>
-                            <img src="../assets/img/product4.jpg" alt="online shop from blog">
+                            <img src="../assets/img/image.png" alt="online shop from blog">
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
                         <div>
-                            <img src="../assets/img/product4.jpg" alt="online shop from blog">
+                            <img src="../assets/img/image.png" alt="online shop from blog">
                         </div>
                     </div>
                 </div>
@@ -393,12 +396,12 @@
             <footer>
                 <div class="row">
                     <div class="footer-block1 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <div class="question">
+                        <div class="question d-flex">
                             <div><i class="fa fa-envelope" aria-hidden="true"></i></div>
                             <div>Do you have any question?<br>
                                 email.example@gmail.com</div>
                         </div>
-                        <div class="phone">
+                        <div class="phone d-flex">
                             <div><i class="fa fa-phone" aria-hidden="true"></i></div>
                             <div>800-140-100<br>
                                 Mon - Fri: 8:00 - 17:00</div>
@@ -430,6 +433,9 @@
                             </div>
                         </div>
                         <div class="footer_custom">
+                            <div><h4>Custom Block</h4></div>
+                            <div >
+                                <ul>
                                     <li><a href="#">About us</a></li>
                                     <li><a href="#">Delivery information</a></li>
                                     <li><a href="#"> Privacy Policy</a></li>
@@ -454,18 +460,19 @@
                             </div>
                         </div>
                         <div class="footer_want">
+                                <div><h4>What you want?</h4></div>
                             <div class="want-block">
                                 <div class="want-block_left">
-                                    <img src="../assets/img/product5.jpg" alt="online shop want product">
+                                    <img src="../assets/img/image.png" alt="online shop want product">
                                 </div>
                                 <div class="want-block_right">
                                     <p>Samsung Galaxy Tab 10.1</p>
                                     <p> $199.99</p>
                                 </div>
                             </div>
-                            <div class="want-block">
+                            <div class="want-block ">
                                 <div class="want-block_left">
-                                    <img src="../assets/img/product5.jpg" alt="online shop want product">
+                                    <img src="../assets/img/image.png" alt="online shop want product">
                                 </div>
                                 <div class="want-block_right">
                                     <p>Samsung Galaxy Tab 10.1</p>
@@ -475,18 +482,20 @@
                         </div>
                     </div>
                     <div class="footer-block3 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <div class="ship">
-                            <div><i class="fa fa-envelope" aria-hidden="true"></i></div>
-                            <div>Do you have any question?<br>
-                                email.example@gmail.com</div>
+                        <div class="ship d-flex">
+                            <div><i class="fa fa-truck" aria-hidden="true"></i></div>
+                            <div>Free shipping & Return<br>
+                                For all orders over $500</div>
                         </div>
-                        <div class="money">
-                            <div><i class="fa fa-phone" aria-hidden="true"></i></div>
-                            <div>800-140-100<br>
-                                Mon - Fri: 8:00 - 17:00</div>
+                        <div class="money d-flex">
+                            <div><i class="fa fa-hand-o-right" aria-hidden="true"></i></div>
+                            <div>Money back guarantee<br>
+                                100% money back guarante</div>
                         </div>
-                        <div class="support">
-                            <a href="#">Contact From</a>
+                        <div class="support d-flex">
+                            <div><i class="fa fa-life-ring" aria-hidden="true"></i></div>
+                            <div>Support 24/7<br>
+                                We answer for question all time</div>
                         </div>
                     </div>
                 </div>
@@ -498,7 +507,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.1/slick.min.js"></script>
     <script src="../assets/js/script.js"></script>
   </body>
 </html>

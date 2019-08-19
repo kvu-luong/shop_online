@@ -8,10 +8,8 @@ $(document).ready(function(){
       });
 
       $('.js-best_slider').slick({
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        arrows: true,
-        centerMode: true,
-        focusOnSelect: true
+         slidesPerRow: 1,
+          rows: 2,
+          arrows: true
       });
 })
